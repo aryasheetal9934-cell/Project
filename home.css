@@ -14,7 +14,7 @@ body {
   display: grid;
   grid-template-columns: 230px 1fr 280px;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: auto;
 }
 .sidebar {
   padding: 20px;
@@ -28,7 +28,7 @@ body {
   color: #10a37a;
   font-size: 26px;
   margin-bottom: 30px;
-  text-shadow: 0 0 12px rgba(16, 163, 122, 0.3);
+  text-shadow:  12px rgba(16, 163, 122, 0.3);
 }
 
 .nav-links {
@@ -84,7 +84,6 @@ body {
   box-shadow: 0 0 14px rgba(16, 163, 122, 0.35);
 }
 
-/* main feed */
 .feed {
   border-right: 1px solid #1d3530;
   min-height: 100vh;
@@ -148,9 +147,7 @@ body {
   transition: opacity 0.2s ease;
 }
 
-.icons i:hover {
-  opacity: 1;
-}
+
 
 .post-submit {
   background-color: #10a37a;
@@ -284,23 +281,3 @@ body {
   text-align: center;
 }
 
-@media (max-width: 900px) {
-  .app {
-    grid-template-columns: 80px 1fr;
-  }
-  .right-sidebar {
-    display: none;
-  }
-  .logo {
-    font-size: 0;
-  }
-  .nav-item span {
-    display: none;
-  }
-  .nav-item {
-    justify-content: center;
-  }
-  .nav-item i {
-    font-size: 22px;
-  }
-}
