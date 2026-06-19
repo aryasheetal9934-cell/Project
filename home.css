@@ -180,7 +180,7 @@ body {
   flex: 1;
 }
 
-.post-meta {
+.user-detail {
   display: flex;
   gap: 6px;
   align-items: center;
@@ -191,7 +191,7 @@ body {
   font-weight: bold;
 }
 
-.post-handle,
+
 .post-time {
   color: #7d9089;
   font-size: 14px;
@@ -273,7 +273,6 @@ body {
   line-height: 1.5;
   color: #c4c8cb;
 }
-
 .footer-note {
   margin-top: 20px;
   font-size: 13px;
