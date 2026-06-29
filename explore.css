@@ -1,0 +1,145 @@
+.explore-main {
+  border-right: 1px solid #1d3530;
+  min-height: 100vh;
+}
+
+.explore-header {
+  padding: 15px 20px;
+  border-bottom: 1px solid #1d3530;
+  position: sticky;
+  top: 0;
+  background-color: rgba(10, 18, 15, 0.9);
+  backdrop-filter: blur(6px);
+  z-index: 10;
+}
+
+.explore-header h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.search-bar-big {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #0f1f1a;
+  border: 1px solid #1d3530;
+  border-radius: 25px;
+  padding: 10px 16px;
+  transition: border-color 0.2s ease;
+}
+
+.search-bar-big:focus-within {
+  border-color: #10a37a;
+}
+
+.search-bar-big i {
+  color: #7d9089;
+  font-size: 14px;
+}
+
+.search-bar-big input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #e7e9ea;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.section-title {
+  padding: 16px 20px 8px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #e7e9ea;
+  border-bottom: 1px solid #1d3530;
+}
+
+.trending-section {
+  border-bottom: 1px solid #1d3530;
+  padding-bottom: 8px;
+}
+
+.trend-card {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 12px 20px;
+  border-bottom: 1px solid #111e1a;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.trend-card:hover {
+  background-color: #0d1815;
+}
+
+.trend-category {
+  font-size: 12px;
+  color: #7d9089;
+}
+
+.trend-tag {
+  font-size: 16px;
+  font-weight: bold;
+  color: #e7e9ea;
+}
+
+.trend-posts {
+  font-size: 12px;
+  color: #7d9089;
+}
+
+/* Suggestions */
+.suggestions-section {
+  padding-bottom: 10px;
+}
+
+.suggestion-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+  border-bottom: 1px solid #111e1a;
+  transition: background-color 0.15s ease;
+}
+
+.suggestion-card:hover {
+  background-color: #0d1815;
+}
+
+.suggestion-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.suggestion-name {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.suggestion-handle {
+  font-size: 13px;
+  color: #7d9089;
+}
+
+.follow-btn {
+  padding: 7px 16px;
+  border-radius: 20px;
+  border: 1px solid #10a37a;
+  background: transparent;
+  color: #10a37a;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.follow-btn:hover {
+  background-color: #10a37a;
+  color: #0a120f;
+}
