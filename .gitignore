@@ -1,5 +1,4 @@
-/css
-/js
-/login.html
-/shh.jpeg
-/signup.html
+node_modules/
+Frontend/node_modules/
+Backend/node_modules/
+.env
