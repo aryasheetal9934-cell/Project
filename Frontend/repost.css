@@ -1,0 +1,77 @@
+.repost-menu {
+  position: fixed;
+  background: #000;
+  border: 1px solid #2f3336;
+  border-radius: 14px;
+  padding: 6px 0;
+  z-index: 999;
+  min-width: 180px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-size: 14px;
+}
+
+.repost-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.repost-option:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.repost-option i {
+  width: 16px;
+  text-align: center;
+}
+
+/* green highlight once something has been reposted */
+.post-actions span.active-retweet i {
+  color: #00ba7c;
+}
+
+.post-actions span.active-retweet {
+  color: #00ba7c;
+}
+
+/* quoted post preview card, shown under a quote-post */
+.quoted-post {
+  border: 1px solid #2f3336;
+  border-radius: 12px;
+  padding: 10px;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.quoted-post .quoted-name {
+  font-weight: 700;
+}
+
+.quoted-post .quoted-handle {
+  color: #71767b;
+}
+
+.quoted-post .quoted-text {
+  margin-top: 4px;
+}
+
+/* wrapper used in the Repost tab, shows "You reposted" above the post */
+.repost-wrapper {
+  border-bottom: 1px solid #2f3336;
+}
+
+.repost-wrapper .post {
+  border-bottom: none;
+}
+
+.repost-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #71767b;
+  padding: 10px 16px 0 16px;
+}

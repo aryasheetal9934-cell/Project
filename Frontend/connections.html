@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connections · FomoGram</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="shared.css"/>
+  <link rel="stylesheet" href="connections.css"/>
+</head>
+<body>
+
+  <div class="web">
+
+    <aside class="sidebar">
+      <h1 class="logo">FomoGram</h1>
+      <nav class="nav-links">
+        <a href="home.html"         class="nav-item"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="explore.html"       class="nav-item"><i class="fa-solid fa-magnifying-glass"></i> Explore</a>
+        <a href="notification.html" class="nav-item"><i class="fa-solid fa-bell"></i> Notifications</a>
+        <a href="messages.html"      class="nav-item"><i class="fa-solid fa-envelope"></i> Messages</a>
+        <a href="bookmarks.html"     class="nav-item"><i class="fa-solid fa-bookmark"></i> Bookmarks</a>
+        <a href="profile.html"       class="nav-item active"><i class="fa-solid fa-user"></i> Profile</a>
+      </nav>
+      <button class="post-btn">Post</button>
+    </aside>
+
+    <main class="connections-main">
+
+      <header class="connections-topbar">
+        <button class="back-btn"><i class="fa-solid fa-arrow-left"></i></button>
+        <div class="topbar-info">
+          <span class="topbar-name">Sheetal Arya</span>
+          <span class="topbar-handle">@sheetal_arya</span>
+        </div>
+      </header>
+
+      <nav class="connections-tabs">
+        <button class="conn-tab" data-tab="following">Following</button>
+        <button class="conn-tab" data-tab="followers">Followers</button>
+      </nav>
+
+      <div class="connections-list" id="connections-list">
+        <!-- rows injected by connections.js -->
+      </div>
+
+    </main>
+
+    <aside class="right-sidebar">
+      <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input type="text" placeholder="Search FomoGram">
+      </div>
+      <div class="about-box">
+        <h3>About FomoGram</h3>
+        <p>A real-time microblogging space built for people who hate missing out. Post, follow, react — live as it happens.</p>
+      </div>
+      <p class="footer-note">FomoGram · made for the fear of missing out</p>
+    </aside>
+
+  </div>
+
+  <script src="connections.js"></script>
+</body>
+</html>

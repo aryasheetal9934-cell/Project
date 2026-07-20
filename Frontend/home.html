@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FomoGram Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="shared.css">
+  <link rel="stylesheet" href="home.css">
+  <script type="module" src="https://cdn.jsdelivr.net/npm/emoji-picker-element@^1/index.js"></script>
+</head>
+<body>
+
+  <div class="web">
+
+    <aside class="sidebar">
+      <h1 class="logo">FomoGram</h1>
+      <nav class="nav-links">
+        <a href="home.html"         class="nav-item active"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="explore.html"       class="nav-item"><i class="fa-solid fa-magnifying-glass"></i> Explore</a>
+        <a href="notification.html" class="nav-item"><i class="fa-solid fa-bell"></i> Notifications</a>
+        <a href="messages.html"      class="nav-item"><i class="fa-solid fa-envelope"></i> Messages</a>
+        <a href="bookmarks.html"     class="nav-item"><i class="fa-solid fa-bookmark"></i> Bookmarks</a>
+        <a href="profile.html"       class="nav-item"><i class="fa-solid fa-user"></i> Profile</a>
+      </nav>
+      <button class="post-btn">Post</button>
+    </aside>
+
+    <main class="feed">
+      <header class="feed-header">
+        <h2>Home</h2>
+      </header>
+
+      <div class="create-post">
+        <img src="shh.jpeg" alt="Your avatar" class="avatar">
+        <div class="create-post-input">
+          <textarea placeholder="What's happening?" maxlength="280"></textarea>
+          <div class="create-post-actions">
+            <span class="icons">
+              <i class="fa-regular fa-image"></i>
+              <i class="fa-solid fa-square-poll-vertical"></i>
+              <i class="fa-regular fa-face-smile"></i>
+            </span>
+            <span class="char-count">280</span>
+            <button class="post-submit" disabled>Post</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <img src="shh.jpeg" alt="Sheetal" class="avatar">
+        <div class="post-content">
+          <div class="post-meta">
+            <span class="post-name">Sheetal Arya</span>
+            <span class="post-handle">@sheetal_arya</span>
+            <span class="post-time">· 2h</span>
+          </div>
+          <p class="post-text">Nothing loud,just effortless🍃</p>
+
+          <div class="post-actions">
+            <span class="action-btn comment-btn" data-count="24">
+              <i class="fa-regular fa-comment"></i>
+              <span class="action-count">24</span>
+            </span>
+            <span class="action-btn retweet-btn" data-count="12">
+              <i class="fa-solid fa-retweet"></i>
+              <span class="action-count">12</span>
+            </span>
+            <span class="action-btn like-btn" data-count="89">
+              <i class="fa-regular fa-heart"></i>
+              <span class="action-count">89</span>
+            </span>
+            <span class="action-btn share-btn">
+              <i class="fa-solid fa-arrow-up-from-bracket"></i>
+            </span>
+          </div>
+
+          <div class="comment-section">
+            <div class="comment-list"></div>
+            <div class="comment-input-row">
+              <img src="shh.jpeg" alt="You" class="avatar comment-avatar">
+              <input type="text" class="comment-input" placeholder="Post your reply" maxlength="200">
+              <button class="comment-send-btn" disabled>Reply</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.XttC9UBnclUetGfuw2JYtwAAAA?pid=Api&P=0&h=180" alt="Aham" class="avatar">
+        <div class="post-content">
+          <div class="post-meta">
+            <span class="post-name">Aham</span>
+            <span class="post-handle">@aham_g</span>
+            <span class="post-time">· 5h</span>
+          </div>
+          <p class="post-text">Some feeling dont need words</p>
+
+          <div class="post-actions">
+            <span class="action-btn comment-btn" data-count="9">
+              <i class="fa-regular fa-comment"></i>
+              <span class="action-count">9</span>
+            </span>
+            <span class="action-btn retweet-btn" data-count="3">
+              <i class="fa-solid fa-retweet"></i>
+              <span class="action-count">3</span>
+            </span>
+            <span class="action-btn like-btn" data-count="41">
+              <i class="fa-regular fa-heart"></i>
+              <span class="action-count">41</span>
+            </span>
+            <span class="action-btn share-btn">
+              <i class="fa-solid fa-arrow-up-from-bracket"></i>
+            </span>
+          </div>
+
+          <div class="comment-section">
+            <div class="comment-list"></div>
+            <div class="comment-input-row">
+              <img src="shh.jpeg" alt="You" class="avatar comment-avatar">
+              <input type="text" class="comment-input" placeholder="Post your reply" maxlength="200">
+              <button class="comment-send-btn" disabled>Reply</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.PhJFjFCemtVCEGSOO8BgXAHaHa?pid=Api&P=0&h=180" alt="Neha" class="avatar">
+        <div class="post-content">
+          <div class="post-meta">
+            <span class="post-name">Neha Patil</span>
+            <span class="post-handle">@snehap</span>
+            <span class="post-time">· 8h</span>
+          </div>
+          <p class="post-text">Elegance lives in simplicity🐼</p>
+
+          <div class="post-actions">
+            <span class="action-btn comment-btn" data-count="17">
+              <i class="fa-regular fa-comment"></i>
+              <span class="action-count">17</span>
+            </span>
+            <span class="action-btn retweet-btn" data-count="6">
+              <i class="fa-solid fa-retweet"></i>
+              <span class="action-count">6</span>
+            </span>
+            <span class="action-btn like-btn" data-count="132">
+              <i class="fa-regular fa-heart"></i>
+              <span class="action-count">132</span>
+            </span>
+            <span class="action-btn share-btn">
+              <i class="fa-solid fa-arrow-up-from-bracket"></i>
+            </span>
+          </div>
+
+          <div class="comment-section">
+            <div class="comment-list"></div>
+            <div class="comment-input-row">
+              <img src="shh.jpeg" alt="You" class="avatar comment-avatar">
+              <input type="text" class="comment-input" placeholder="Post your reply" maxlength="200">
+              <button class="comment-send-btn" disabled>Reply</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.2_6b4lk660eaWdELhk3BnwAAAA?pid=Api&P=0&h=180" alt="Maneet" class="avatar">
+        <div class="post-content">
+          <div class="post-meta">
+            <span class="post-name">Maneet Singh</span>
+            <span class="post-handle">@maneet__</span>
+            <span class="post-time">· 11h</span>
+          </div>
+          <p class="post-text">just existing,beautifully🕊️</p>
+
+          <div class="post-actions">
+            <span class="action-btn comment-btn" data-count="5">
+              <i class="fa-regular fa-comment"></i>
+              <span class="action-count">5</span>
+            </span>
+            <span class="action-btn retweet-btn" data-count="1">
+              <i class="fa-solid fa-retweet"></i>
+              <span class="action-count">1</span>
+            </span>
+            <span class="action-btn like-btn" data-count="27">
+              <i class="fa-regular fa-heart"></i>
+              <span class="action-count">27</span>
+            </span>
+            <span class="action-btn share-btn">
+              <i class="fa-solid fa-arrow-up-from-bracket"></i>
+            </span>
+          </div>
+
+          <div class="comment-section">
+            <div class="comment-list"></div>
+            <div class="comment-input-row">
+              <img src="shh.jpeg" alt="You" class="avatar comment-avatar">
+              <input type="text" class="comment-input" placeholder="Post your reply" maxlength="200">
+              <button class="comment-send-btn" disabled>Reply</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <aside class="right-sidebar">
+      <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input type="text" placeholder="Search FomoGram">
+      </div>
+      <div class="about-box">
+        <h3>About FomoGram</h3>
+        <p>A real-time microblogging space built for people who hate missing out. Post, follow, react — live as it happens.</p>
+      </div>
+      <p class="footer-note">FomoGram · made for the fear of missing out</p>
+    </aside>
+
+  </div>
+
+  <div class="toast" id="shareToast">Link copied to clipboard!</div>
+
+  <div class="modal-overlay" id="postModalOverlay">
+    <div class="post-modal">
+      <div class="post-modal-header">
+        <button class="modal-close" id="modalCloseBtn">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="post-modal-body">
+        <img src="shh.jpeg" alt="Your avatar" class="avatar">
+        <div class="post-modal-input">
+          <textarea id="modalTextarea" placeholder="What's happening?" maxlength="280"></textarea>
+        </div>
+      </div>
+
+      <div class="post-modal-footer">
+        <span class="icons">
+          <i class="fa-regular fa-image" title="Photo"></i>
+          <i class="fa-solid fa-square-poll-vertical" title="Poll"></i>
+          <i class="fa-regular fa-face-smile" title="Emoji"></i>
+        </span>
+
+        <div class="post-modal-right">
+          <span class="char-count" id="modalCharCount">280</span>
+          <button class="post-submit" id="modalPostBtn" disabled>Post</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="home.js"></script>
+</body>
+</html>

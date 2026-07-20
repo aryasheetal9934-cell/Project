@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Profile · FomoGram</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="edit.css"/>
+  <link rel="stylesheet" href="edit-profile.css"/>
+  <link rel="stylesheet" href="shared.css"/>
+</head>
+<body>
+
+  <div class="web">
+
+    <aside class="sidebar">
+      <h1 class="logo">FomoGram</h1>
+      <nav class="nav-links">
+        <a href="home.html"         class="nav-item"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="explore.html"       class="nav-item"><i class="fa-solid fa-magnifying-glass"></i> Explore</a>
+        <a href="notification.html" class="nav-item"><i class="fa-solid fa-bell"></i> Notifications</a>
+        <a href="messages.html"      class="nav-item"><i class="fa-solid fa-envelope"></i> Messages</a>
+        <a href="bookmarks.html"     class="nav-item"><i class="fa-solid fa-bookmark"></i> Bookmarks</a>
+        <a href="profile.html"       class="nav-item active"><i class="fa-solid fa-user"></i> Profile</a>
+      </nav>
+      <button class="post-btn">Post</button>
+    </aside>
+
+    <main class="edit-main">
+
+      <header class="edit-topbar">
+        <button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+        <span class="edit-title">Edit profile</span>
+        <button class="save-btn">Save</button>
+      </header>
+
+      <div class="edit-banner-wrap">
+        <div class="edit-banner"></div>
+        <label class="banner-edit-icon" for="banner-upload">
+          <i class="fa-solid fa-camera"></i>
+        </label>
+        <input type="file" id="banner-upload" accept="image/*" hidden>
+      </div>
+
+      <div class="edit-avatar-wrap">
+        <img src="shh.jpeg" alt="Avatar" class="edit-avatar" id="avatar-preview">
+        <label class="avatar-edit-icon" for="avatar-upload">
+          <i class="fa-solid fa-camera"></i>
+        </label>
+        <input type="file" id="avatar-upload" accept="image/*" hidden>
+      </div>
+
+      <form class="edit-form" id="edit-form">
+
+        <label class="field">
+          <span class="field-label">Name</span>
+          <input type="text" id="name-input" maxlength="50" placeholder="Your name">
+        </label>
+
+        <label class="field">
+          <span class="field-label">Handle</span>
+          <div class="handle-input-wrap">
+            <span class="at-sign">@</span>
+            <input type="text" id="handle-input" maxlength="30" placeholder="username">
+          </div>
+        </label>
+
+        <label class="field">
+          <span class="field-label">Bio</span>
+          <textarea id="bio-input" maxlength="160" placeholder="Tell people about yourself"></textarea>
+          <span class="char-count" id="bio-count">0/160</span>
+        </label>
+
+      </form>
+
+    </main>
+
+    <aside class="right-sidebar">
+      <div class="about-box">
+        <h3>About FomoGram</h3>
+        <p>A real-time microblogging space built for people who hate missing out. Post, follow, react — live as it happens.</p>
+      </div>
+      <p class="footer-note">FomoGram · made for the fear of missing out</p>
+    </aside>
+
+  </div>
+
+  <script src="edit-profile.js"></script>
+  <script src="edit.js"></script>
+</body>
+</html>
